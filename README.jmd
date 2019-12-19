@@ -33,54 +33,11 @@ Typing certain characters as the first in an input line will change the mode of 
 A binary installation of Julia includes several packages in the standard library. They are listed and documented as part of the general documentation at https://docs.julialang.org. Most of the time a user does not need to be conscious of these packages but occasionally we will attach one explicitly.
 
 For example
-~~~~{.julia}
-julia> using InteractiveUtils, Random, Statistics
-
-julia> varinfo(Random)   # list exported functions and types
-  name                   size summary            
-  ––––––––––––––– ––––––––––– –––––––––––––––––––
-  AbstractRNG       176 bytes DataType           
-  MersenneTwister   232 bytes DataType           
-  Random          525.707 KiB Module             
-  RandomDevice      200 bytes DataType           
-  bitrand             0 bytes typeof(bitrand)    
-  rand!               0 bytes typeof(rand!)      
-  randcycle           0 bytes typeof(randcycle)  
-  randcycle!          0 bytes typeof(randcycle!) 
-  randexp             0 bytes typeof(randexp)    
-  randexp!            0 bytes typeof(randexp!)   
-  randn!              0 bytes typeof(randn!)     
-  randperm            0 bytes typeof(randperm)   
-  randperm!           0 bytes typeof(randperm!)  
-  randstring          0 bytes typeof(randstring) 
-  randsubseq          0 bytes typeof(randsubseq) 
-  randsubseq!         0 bytes typeof(randsubseq!)
-  shuffle             0 bytes typeof(shuffle)    
-  shuffle!            0 bytes typeof(shuffle!)   
-
-julia> varinfo(Statistics)
-  name              size summary                     
-  –––––––––– ––––––––––– ––––––––––––––––––––––––––––
-  Statistics 250.283 KiB Module                      
-  cor            0 bytes typeof(Statistics.cor)      
-  cov            0 bytes typeof(Statistics.cov)      
-  mean           0 bytes typeof(Statistics.mean)     
-  mean!          0 bytes typeof(Statistics.mean!)    
-  median         0 bytes typeof(Statistics.median)   
-  median!        0 bytes typeof(Statistics.median!)  
-  middle         0 bytes typeof(Statistics.middle)   
-  quantile       0 bytes typeof(Statistics.quantile) 
-  quantile!      0 bytes typeof(Statistics.quantile!)
-  std            0 bytes typeof(Statistics.std)      
-  stdm           0 bytes typeof(Statistics.stdm)     
-  var            0 bytes typeof(Statistics.var)      
-  varm           0 bytes typeof(Statistics.varm)     
-
-~~~~~~~~~~~~~
-
-
-
-
+```{julia;label=randomlist;term=true}
+using InteractiveUtils, Random, Statistics
+varinfo(Random)   # list exported functions and types
+varinfo(Statistics)
+```
 
 ### User-contributed Packages
 
