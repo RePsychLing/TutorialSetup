@@ -41,7 +41,7 @@ julia> varinfo(Random)   # list exported functions and types
   ––––––––––––––– ––––––––––– –––––––––––––––––––
   AbstractRNG       176 bytes DataType           
   MersenneTwister   232 bytes DataType           
-  Random          525.707 KiB Module             
+  Random          525.723 KiB Module             
   RandomDevice      200 bytes DataType           
   bitrand             0 bytes typeof(bitrand)    
   rand!               0 bytes typeof(rand!)      
@@ -100,6 +100,16 @@ A listing of registered Julia packages is available at https://pkg.julialang.org
 | Weave | similar to the `knitr` package for R |
 
 These packages must be added (similar to `package.install` in R) before they can be attached with `using` (similar to `library` or `require` in R).  In the package REPL (accessed by typing `]` as the first character of a line) just type `add Tables`, for example.  Note that you must have R installed on your computer to be able to successfully install the `RCall` package in Julia.
+
+This document was created from the file `README.jmd` in this repository using `Weave` as
+~~~~{.julia}
+
+using Weave
+weave("README.jmd", doctype="pandoc")
+~~~~~~~~~~~~~
+
+
+
 
 ## Integrated Development Environments
 

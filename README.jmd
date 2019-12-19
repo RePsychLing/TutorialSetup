@@ -58,6 +58,12 @@ A listing of registered Julia packages is available at https://pkg.julialang.org
 
 These packages must be added (similar to `package.install` in R) before they can be attached with `using` (similar to `library` or `require` in R).  In the package REPL (accessed by typing `]` as the first character of a line) just type `add Tables`, for example.  Note that you must have R installed on your computer to be able to successfully install the `RCall` package in Julia.
 
+This document was created from the file `README.jmd` in this repository using `Weave` as
+```{julia;label=weavecall;eval=false}
+using Weave
+weave("README.jmd", doctype="pandoc")
+```
+
 ## Integrated Development Environments
 
 Editing and running Julia code is supported in both the [Atom editor](https://atom.io) and [VSCode](https://code.visualstudio.com).  The Atom support is called Juno and is documented at https://junolab.github.io.  The VSCode support is documented at https://www.julia-vscode.org
