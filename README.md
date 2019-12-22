@@ -1,10 +1,10 @@
 ---
 title : Tutorial Setup
 author: Phillip Alday, Douglas Bates, Reinhold Kliegl
-date  : February 19-21, 2020
+date  : February 17-19, 2020
 ---
 
-A tutorial on *Mixed Models in the Julia Programming Language* will be held February 19-21, 2020 at the Zentrum fur interdisziplinare Forschung (ZiF) at the University of Bielefeld. In preparation for this tutorial, please follow these instructions to install Julia on the computer you will be using.
+A tutorial on *Mixed Models in the Julia Programming Language* will be held February 17-19, 2020 at the Zentrum fur interdisziplinare Forschung (ZiF) at the University of Bielefeld. In preparation for this tutorial, please follow these instructions to install Julia on the computer you will be using.
 
 We assume that those participating in the tutorial are somewhat familiar with [`R`](https://R-project.org) and the [`RStudio`](https://rstudio.com/products/rstudio) IDE (integrated development environment).
 
