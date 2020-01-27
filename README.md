@@ -10,7 +10,7 @@ We assume that those participating in the tutorial are somewhat familiar with [`
 
 ## Installing Julia
 
-The [Julia download site](https://julialang.org/downloads/) provides binary downloads for most common operating systems. Ensure that the version you install is at least v1.3.0. By the time of the tutorial v1.4.0 may have been released - if so please install that version.
+The [Julia download site](https://julialang.org/downloads/) provides binary downloads for most common operating systems. Ensure that the version you install is at least v1.3.1. Version 1.4.0-rc1 (release candidate 1) is also suitable if you want to be in the vanguard.
 
 ## The Julia REPL
 
@@ -37,31 +37,31 @@ For example
 julia> using InteractiveUtils, Random, Statistics
 
 julia> varinfo(Random)   # list exported functions and types
-  name                   size summary            
-  ––––––––––––––– ––––––––––– –––––––––––––––––––
-  AbstractRNG       176 bytes DataType           
-  MersenneTwister   232 bytes DataType           
-  Random          525.723 KiB Module             
-  RandomDevice      200 bytes DataType           
-  bitrand             0 bytes typeof(bitrand)    
-  rand!               0 bytes typeof(rand!)      
-  randcycle           0 bytes typeof(randcycle)  
-  randcycle!          0 bytes typeof(randcycle!) 
-  randexp             0 bytes typeof(randexp)    
-  randexp!            0 bytes typeof(randexp!)   
-  randn!              0 bytes typeof(randn!)     
-  randperm            0 bytes typeof(randperm)   
-  randperm!           0 bytes typeof(randperm!)  
-  randstring          0 bytes typeof(randstring) 
-  randsubseq          0 bytes typeof(randsubseq) 
-  randsubseq!         0 bytes typeof(randsubseq!)
-  shuffle             0 bytes typeof(shuffle)    
-  shuffle!            0 bytes typeof(shuffle!)   
+  name                   size summary                   
+  ––––––––––––––– ––––––––––– ––––––––––––––––––––––––––
+  AbstractRNG       176 bytes DataType                  
+  MersenneTwister   232 bytes DataType                  
+  Random          539.549 KiB Module                    
+  RandomDevice      192 bytes DataType                  
+  bitrand             0 bytes typeof(Random.bitrand)    
+  rand!               0 bytes typeof(Random.rand!)      
+  randcycle           0 bytes typeof(Random.randcycle)  
+  randcycle!          0 bytes typeof(Random.randcycle!) 
+  randexp             0 bytes typeof(Random.randexp)    
+  randexp!            0 bytes typeof(Random.randexp!)   
+  randn!              0 bytes typeof(Random.randn!)     
+  randperm            0 bytes typeof(Random.randperm)   
+  randperm!           0 bytes typeof(Random.randperm!)  
+  randstring          0 bytes typeof(Random.randstring) 
+  randsubseq          0 bytes typeof(Random.randsubseq) 
+  randsubseq!         0 bytes typeof(Random.randsubseq!)
+  shuffle             0 bytes typeof(Random.shuffle)    
+  shuffle!            0 bytes typeof(Random.shuffle!)   
 
 julia> varinfo(Statistics)
   name              size summary                     
   –––––––––– ––––––––––– ––––––––––––––––––––––––––––
-  Statistics 250.283 KiB Module                      
+  Statistics 209.972 KiB Module                      
   cor            0 bytes typeof(Statistics.cor)      
   cov            0 bytes typeof(Statistics.cov)      
   mean           0 bytes typeof(Statistics.mean)     
@@ -92,6 +92,7 @@ A listing of registered Julia packages is available at https://pkg.julialang.org
 | CategoricalArrays | `factor`-like objects |
 | DataFrames | data tables with properties and capabilities like R's `data.frame` |
 | DataFramesMeta | database-like operations on data tables |
+| IJulia | Run Julia in Jupyter notebooks }
 | MixedModels | fit and examine mixed-effects models |
 | PooledArrays | light-weight version of categorical arrays |
 | RCall | call R from Julia, including data transfers |
@@ -116,3 +117,7 @@ weave("README.jmd", doctype="pandoc")
 Editing and running Julia code is supported in both the [Atom editor](https://atom.io) and [VSCode](https://code.visualstudio.com).  The Atom support is called Juno and is documented at https://junolab.github.io.  The VSCode support is documented at https://www.julia-vscode.org
 
 Either of these environments is fine for this workshop.
+
+## Jupyter notebooks
+
+[Jupyter](https://jupyter.org) provides interactive notebooks in the browser.  When the `IJulia` package is installed and built it installs a version of [`conda`](https://docs.conda.io/en/latest/) if it is not already available.  The `jupyter-notebook` and `jupyter-lab` applications can be added through conda.  If you haven't used Jupyter notebooks it is probably best to wait to install them at the workshop. 
