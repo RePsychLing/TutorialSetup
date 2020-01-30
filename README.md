@@ -114,7 +114,7 @@ weave("README.jmd", doctype="pandoc")
 
 ## Integrated Development Environments
 
-Editing and running Julia code is supported in both the [Atom editor](https://atom.io) and [VSCode](https://code.visualstudio.com).  The Atom support is called Juno and is documented at https://junolab.github.io.  The VSCode support is documented at https://www.julia-vscode.org
+Editing and running Julia code is supported in both [VSCode](https://code.visualstudio.com) and the [Atom editor](https://atom.io). They are IDEs similar to RStudio. The VSCode support is documented at https://www.julia-vscode.org. The Atom support is called Juno and is documented at https://junolab.github.io. At least on some systems VSCode recognizes default installations of Julia and automatically sets the necessary paths. We recommend to start with installations of Julia and VSCode. 
 
 Either of these environments is fine for this workshop.
 
