@@ -41,7 +41,7 @@ julia> varinfo(Random)   # list exported functions and types
   ––––––––––––––– ––––––––––– ––––––––––––––––––––––––––
   AbstractRNG       176 bytes DataType                  
   MersenneTwister   232 bytes DataType                  
-  Random          539.549 KiB Module                    
+  Random          478.102 KiB Module                    
   RandomDevice      192 bytes DataType                  
   bitrand             0 bytes typeof(Random.bitrand)    
   rand!               0 bytes typeof(Random.rand!)      
@@ -92,7 +92,7 @@ A listing of registered Julia packages is available at https://pkg.julialang.org
 | CategoricalArrays | `factor`-like objects |
 | DataFrames | data tables with properties and capabilities like R's `data.frame` |
 | DataFramesMeta | database-like operations on data tables |
-| IJulia | Run Julia in Jupyter notebooks }
+| IJulia | Run Julia in Jupyter notebooks |
 | MixedModels | fit and examine mixed-effects models |
 | PooledArrays | light-weight version of categorical arrays |
 | RCall | call R from Julia, including data transfers |
@@ -114,10 +114,15 @@ weave("README.jmd", doctype="pandoc")
 
 ## Integrated Development Environments
 
-Editing and running Julia code is supported in both the [Atom editor](https://atom.io) and [VSCode](https://code.visualstudio.com).  The Atom support is called Juno and is documented at https://junolab.github.io.  The VSCode support is documented at https://www.julia-vscode.org
+Editing and running Julia code is supported in both [VSCode](https://code.visualstudio.com) and the [Atom editor](https://atom.io).
+They are IDEs similar to RStudio.
+The VSCode support is documented at https://www.julia-vscode.org.
+The Atom support is called Juno and is documented at https://junolab.github.io.
+At least on some systems VSCode recognizes default installations of Julia and automatically sets the necessary paths.
+We recommend to start with installations of Julia and VSCode.
 
 Either of these environments is fine for this workshop.
 
 ## Jupyter notebooks
 
-[Jupyter](https://jupyter.org) provides interactive notebooks in the browser.  When the `IJulia` package is installed and built it installs a version of [`conda`](https://docs.conda.io/en/latest/) if it is not already available.  The `jupyter-notebook` and `jupyter-lab` applications can be added through conda.  If you haven't used Jupyter notebooks it is probably best to wait to install them at the workshop. 
+[Jupyter](https://jupyter.org) provides interactive notebooks in the browser.  When the `IJulia` package is installed and built it installs a version of [`conda`](https://docs.conda.io/en/latest/) if it is not already available.  The `jupyter-notebook` and `jupyter-lab` applications can be added through conda.  If you haven't used Jupyter notebooks it is probably best to wait to install them at the workshop.
